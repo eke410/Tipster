@@ -4,7 +4,7 @@
 
 Submitted by: **Elizabeth Ke**
 
-Time spent: **5** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -32,6 +32,8 @@ GIF created with [ezgif](https://ezgif.com/video-to-gif).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+None yet!
 
 ## Credits
 
