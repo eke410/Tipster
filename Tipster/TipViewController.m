@@ -24,15 +24,16 @@
 }
 
 - (IBAction)onTap:(id)sender {
-    NSLog(@"hello");
-    
     [self.view endEditing:true];
 }
 
 - (IBAction)updateLabels:(id)sender {
     if (self.billAmountField.text.length == 0) {
+        NSLog(@"hid labels");
         [self hideLabels];
-    } else if (self.billAmountField.frame.origin.y > 114) {
+    } else if (self.billAmountField.frame.origin.y > 124) {
+        NSLog(@"%f", self.billAmountField.frame.origin.y);
+        NSLog(@"showed labels");
         [self showLabels];
     }
     
@@ -43,8 +44,8 @@
     double tip = bill * tipPercentage;
     double total = bill + tip;
     
-    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
-    self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
+    self.tipLabel.text = [NSString stringWithFormat:@"+ $%.2f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"= $%.2f", total];
 }
 
 - (void)hideLabels {
