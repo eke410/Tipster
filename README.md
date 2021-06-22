@@ -4,7 +4,7 @@
 
 Submitted by: **Elizabeth Ke**
 
-Time spent: **5** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -24,13 +24,16 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](https://i.imgur.com/LxVkgVQ.gif)
 
-GIF created with [Kap](https://getkap.co/).
+
+GIF created with [ezgif](https://ezgif.com/video-to-gif).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+None yet!
 
 ## Credits
 
