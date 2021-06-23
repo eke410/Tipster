@@ -13,6 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
 @property (weak, nonatomic) IBOutlet UIView *labelsContainerView;
+@property (weak, nonatomic) IBOutlet UISlider *personSlider;
+@property (weak, nonatomic) IBOutlet UITextField *personLabel;
+@property (weak, nonatomic) IBOutlet UITextField *splitBillField;
 
 @end
 
@@ -28,15 +31,15 @@
 }
 
 - (IBAction)updateLabels:(id)sender {
+    
+    // shows / hides labels
     if (self.billAmountField.text.length == 0) {
-        NSLog(@"hid labels");
         [self hideLabels];
     } else if (self.billAmountField.frame.origin.y > 124) {
-        NSLog(@"%f", self.billAmountField.frame.origin.y);
-        NSLog(@"showed labels");
         [self showLabels];
     }
     
+    // calculates & updates tip and total
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     
@@ -46,7 +49,13 @@
     
     self.tipLabel.text = [NSString stringWithFormat:@"+ $%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat:@"= $%.2f", total];
+    
+    // updates splits
+    self.personLabel.text = [NSString stringWithFormat:@"%.0f", self.personSlider.value];
+    double splitBill = total / [self.personLabel.text doubleValue];
+    self.splitBillField.text = [NSString stringWithFormat:@"= $%.2f", splitBill];
 }
+
 
 - (void)hideLabels {
     [UIView animateWithDuration:0.5 animations:^{
