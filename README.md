@@ -4,7 +4,7 @@
 
 Submitted by: **Elizabeth Ke**
 
-Time spent: **3** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -15,16 +15,17 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 * [ ] basic UI animations
+* [ ] split bill feature
 
 The following **additional** features are implemented:
 
-- [ ] None yet
+- [ ] None 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/LxVkgVQ.gif)
+![](https://i.imgur.com/jCXx2ar.gif)
 
 
 GIF created with [ezgif](https://ezgif.com/video-to-gif).
@@ -33,7 +34,7 @@ GIF created with [ezgif](https://ezgif.com/video-to-gif).
 
 Describe any challenges encountered while building the app.
 
-None yet!
+Nothing specific - just learning my way around Xcode & Objective C. 
 
 ## Credits
 
